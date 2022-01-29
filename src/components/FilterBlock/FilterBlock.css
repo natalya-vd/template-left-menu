@@ -1,0 +1,32 @@
+.filter-block {
+  position: sticky;
+  top: 80px;
+  padding: 10px 20px 5px;
+  border-bottom: 2px solid #000;
+  background-color: #fff;
+}
+
+.open {
+  padding: 10px 20px 20px;
+}
+
+.filter-block__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-block__inner p {
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+}

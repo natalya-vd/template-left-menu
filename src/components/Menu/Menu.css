@@ -1,0 +1,56 @@
+.nav {
+  position: fixed;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  overflow: hidden;
+  border-right: 2px solid #000;
+  background-color: #ededed;
+}
+
+.nav:hover {
+  width: 300px;
+}
+
+.nav__list {
+  height: 100vh;
+  padding: 30px 0 10px 20px;
+  list-style: none;
+}
+
+.nav:hover .nav__list {
+  padding: 30px 20px 10px;
+}
+
+.nav__item {
+  margin: 0 0 20px;
+}
+
+.nav__item:first-child {
+  margin: 0 0 40px;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav__link span.avatar {
+  margin: 0 20px 0 0;
+  flex: 1 0 50px;
+}
+
+.nav__link span:not(.avatar) {
+  padding: 4px 6px;
+}
+
+.nav:hover .nav__link span.avatar {
+  flex: 0 1 auto;
+}
+
+.nav__link:hover span:not(.avatar) {
+  background-color: #d3d3d3;
+  border-radius: 15px;
+}
